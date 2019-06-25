@@ -10,27 +10,20 @@
 </form>
 
 <?php
-	
+		include 'conn/conn.php';
 
 	
 if(isset($_POST['dl'])){
 	
 	session_start();
-	include 'conn/conn.php';
+
 	$u=$_POST['user'];
 	$p=$_POST['pwd'];
 		$_SESSION['admin']=$u;
     $sql="select a_name,pw from admin where a_name='{$u}' and pw='{$p}'";
     $result=$link->query($sql);
 		
-		if($result->rowCount()>0){
-	header("location:index.php");
-		echo "<script>alert('登录成功');document.location.href='';</script>";
-	
-	
-	}else{
-		echo "<script>alert('登录不成功');</script>";
-	}
+		if($result->rowCount()>0){echo "<script>alert('登录成功');document.location.href='index.php';</script>";}else{echo "<script>alert('登录不成功');document.location.href='admin_login.php';</script>";}
 	
 	
 	

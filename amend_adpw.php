@@ -24,8 +24,8 @@ if(isset($_POST['add'])){
 	$id=$_SESSION['admin'];
 
 		
-$sql1="update admin set password='$c' where a_name='$id'";
-echo $sql1;
+$sql1="update admin set pw='$c' where a_name='$id'";
+
 //	$sql2="select sno from student_message group by sno having count(*)>1";
 //	$link->beginTransaction();
 	$ps = $link->query($sql1);
@@ -41,7 +41,7 @@ echo $sql1;
 //	$ps->bindParam("j",$time);
 
 	if($ps->rowCount()>0){
-	echo  "<script>alert('修改成功');document.location.href='index.php';</script>";
+	echo  "<script>alert('修改成功');document.location.href='admin_logout.php';</script>";
 	}else{
 		echo  "<script>alert('修改失败');document.location.href='index.php';</script>";
 	} 
