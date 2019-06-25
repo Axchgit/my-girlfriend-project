@@ -1,3 +1,12 @@
+<meta charset="utf-8" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<body style="background:url(img/beijin.jpg); background-repeat:no-repeat;  background-size: 100%;">
+<h1 class="div0">学生信息 </h1>
+<form name="add" method="post" enctype="multipart/form-data">
+	
+
+	</body>
+</form>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 	
 <html>
@@ -8,8 +17,8 @@
 	</head>
 	<body >
 <!--<?php include('css/header_admin.php') ?>-->
-			
-	    <div class="nav">
+			<hr>
+	   
 		<a class="left" href="admin_add.php"  >管理员注册</a>
 		
 	
@@ -21,8 +30,7 @@
 		<a class="left " href="select_vege.php">查找蔬菜</a>
 		<a href="user_login.php"></a>
 		<a class="right" href="admin_logout.php">退出登录</a>
-		<div style="clear: both;"></div>
-		</div>
+		
 		
 		<!-- <a href='delete_vege.php?id=27} onClick='return confirm('真的要删除吗？')'><button class='bt3' >删除</button></a>-->
 	</body>
@@ -99,5 +107,6 @@ if($currentPage==$pageCount){
 <!--<a href="admin_index.php"><button  class="bt2">返回页面</button></a>-->
 
 <a href="add_xs.php"><button style="width: 100px; height: 40px;" class="bt3">添加学生信息</button></a>
+<a href="add_xs.php"><button style="width: 100px; height: 40px;" class="bt3">下载信息</button></a>
 
 </div>
