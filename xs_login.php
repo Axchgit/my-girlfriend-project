@@ -22,16 +22,12 @@ if(isset($_POST['dl'])){
     $sql="select sno,password from student_message where sno='{$u}' and password='{$p}'";
   
     $result=$link->query($sql);
-		
 	if($result->rowCount()>0){
 //	header("location:index.html");
 		echo "<script>alert('登录成功');document.location.href='xs_message_self.php';</script>";
-	}else{
-		
+	}else{	
 		echo "<script>alert('登录不成功');</script>";
 	}
-	
-	
 }
 
 ?>

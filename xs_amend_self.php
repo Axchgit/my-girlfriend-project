@@ -66,9 +66,9 @@ if(isset($_POST['tj'])){
 //	$ps->bindParam("j",$time);
 	$ps->execute();
 	if($ps->execute()){
-	echo  "<script>alert('修改成功');document.location.href='xs_list.php';</script>";
+	echo  "<script>alert('修改成功');document.location.href='xs_message_self.php';</script>";
 	}else{
-		echo  "<script>alert('修改失败');document.location.href='xs_list.php';</script>";
+		echo  "<script>alert('修改失败');document.location.href='xs_message_self.php';</script>";
 	}
 //	$re=$link->query($sql2);
 //	if($re->rowCount()>0){
