@@ -24,6 +24,7 @@
 
 <?php
 include 'conn/conn.php';
+include  'conn/verify_admin.php';
 if(isset($_POST['tj'])){
 	$n=$_POST['name'];
 	$sn=$_POST['sno'];

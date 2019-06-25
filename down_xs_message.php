@@ -10,13 +10,18 @@
     header("Content-type:application/vnd.ms-excel");  
     header("Content-Disposition:filename=$a");  
  
-    $strexport="编号\t姓名\t性别\t年龄\r";
+    $strexport="编号\t姓名\t学号\t性别\t班级\t联系方式\t工作岗位\t工资\t添加时间\r";
     foreach ($re as $row){  
 	
         $strexport.=$row['id']."\t";   
         $strexport.=$row['name']."\t";  
-        $strexport.=$row['sex']."\t";  
-        $strexport.=$row['sno']."\r";  
+        $strexport.=$row['sno']."\t";   
+        $strexport.=$row['sex']."\t";      
+        $strexport.=$row['class']."\t"; 
+        $strexport.=$row['tel']."\t";
+        $strexport.=$row['work']."\t";
+        $strexport.=$row['price']."\t";             
+        $strexport.=$row['date_time']."\r";  
 		
     }  
     $strexport=iconv('UTF-8',"GB2312//IGNORE",$strexport);  

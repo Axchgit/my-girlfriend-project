@@ -8,7 +8,7 @@
 	<span class="sp1">用户名:</span>
 	<span class="sp2"><input type="text" name="a_name"  required size="50"> </span></br>
 	<span class="sp1">密码:</span>
-	<span class="sp2"><input type="text" name="pw"  required size="50> </span></br>
+	<span class="sp2"><input type="password" name="pw"  required size="50> </span></br>
 	<p  align="center"><span style="width: 500px; text-align: center;"></br><input class="bt1" name="add" type="submit" value="注册"></span></p>
 	
 </form>

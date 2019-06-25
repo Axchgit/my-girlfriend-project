@@ -25,7 +25,7 @@ if(isset($_POST['dl'])){
 		
 	if($result->rowCount()>0){
 //	header("location:index.html");
-		echo "<script>alert('登录成功');document.location.href='index.php';</script>";
+		echo "<script>alert('登录成功');document.location.href='xs_message_self.php';</script>";
 	}else{
 		
 		echo "<script>alert('登录不成功');</script>";
