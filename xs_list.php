@@ -94,5 +94,5 @@ if($currentPage==$pageCount){
 
 <a href="add_xs.php"><button style="width: 100px; height: 40px;" class="bt3">添加学生信息</button></a>
 <a href="down_xs_message.php"><button style="width: 100px; height: 40px;" class="bt3">下载信息</button></a>
-
+<a href="index.php"><button style="width: 100px; height: 40px;" class="bt3">返回主页面</button></a>
 </div>

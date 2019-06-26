@@ -85,7 +85,7 @@ if($currentPage==$pageCount){
 <br />
 
 <div style="text-align: center;">
-<!--<a href="admin_index.php"><button  class="bt2">返回页面</button></a>-->
+<a href="index.php"><button  class="bt2">返回页面</button></a>
 
 
 
